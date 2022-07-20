@@ -1,0 +1,32 @@
+header{
+    .top-nav{
+        height: 40px;
+        a:hover{
+            text-shadow: 2px 2px 7px $white;
+        }
+    }
+    .nav-menu{
+        a:hover{
+            color: $info !important;
+        }
+        // .menu-item{
+        //     position: relative;
+        //     overflow: hidden !important;
+        //     &::before{
+        //         content: "";
+        //         width: 0%;
+        //         height: 100%;
+        //         position: absolute;
+        //         right: -100%;
+        //         bottom: -10px;
+        //         display: block;
+        //         border-bottom: 3px solid $info;
+        //         transition: .2s;
+        //     }
+        //     &:hover::before{
+        //         right: 0;
+        //     }
+        // }
+    }
+
+}

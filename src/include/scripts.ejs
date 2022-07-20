@@ -1,0 +1,113 @@
+<!-- <script src="js/vendor.js"></script> -->
+<script src="../vendor/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
+<script src="../vendor/OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.min.js"></script>
+<script>
+    $(document).ready(function () {
+    var slider = $('.owl-carousel-slider');
+    slider.owlCarousel({
+        rtl:true,
+        loop:true,
+        items:1,
+        nav:false,
+        dots:false,
+        autoplay:true,
+        autoplayTimeout:4000, 
+    })
+    $('.slider-parent .slider-dots').click(function () {
+        slider.trigger('next.owl.carousel', [900]);
+    });
+    })
+</script> 
+<script>
+    $(document).ready(function () {
+    var productPanel1 = $('.owl-product-panel1');
+    productPanel1.owlCarousel({
+        rtl: true,
+        loop: true,
+        center: false,
+        margin: 10,
+        lazyLoad: true,
+        nav: false,
+        dots: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            800: {
+                items: 3
+            },
+            1100: {
+                items: 5
+            }
+        }
+    })
+    $('.panel1-nav .right-arrow').click(function () {
+        productPanel1.trigger('next.owl.carousel', [900]);
+    });
+    $('.panel1-nav .left-arrow').click(function () {
+        productPanel1.trigger('prev.owl.carousel', [900]);
+    });
+    })
+</script>
+<script>
+    $(document).ready(function () {
+    var productPanel2 = $('.owl-product-panel2');
+    productPanel2.owlCarousel({
+        rtl: true,
+        loop: true,
+        center: false,
+        margin: 10,
+        lazyLoad: true,
+        nav: false,
+        dots: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            800: {
+                items: 3
+            },
+            1100: {
+                items: 5
+            }
+        }
+    })
+    $('.panel2-nav .right-arrow').click(function () {
+        productPanel2.trigger('next.owl.carousel', [900]);
+    });
+    $('.panel2-nav .left-arrow').click(function () {
+        productPanel2.trigger('prev.owl.carousel', [900]);
+    });
+    })
+</script>
+<script>
+    $(document).ready(function () {
+    var brandsPanel = $('.owl-brands-panel');
+    brandsPanel.owlCarousel({
+        rtl: true,
+        loop: true,
+        center: false,
+        margin: 20,
+        lazyLoad: true,
+        nav: false,
+        dots: false,
+        responsive: {
+            0: {
+                items: 2
+            },
+            800: {
+                items: 5
+            },
+            1100: {
+                items: 7
+            }
+        }
+    })
+    $('.brands-nav .right-arrow').click(function () {
+        brandsPanel.trigger('next.owl.carousel', [900]);
+    });
+    $('.brands-nav .left-arrow').click(function () {
+        brandsPanel.trigger('prev.owl.carousel', [900]);
+    });
+    })
+</script>

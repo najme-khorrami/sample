@@ -1,24 +1,114 @@
-<!doctype html>
-<html lang="fa" dir="rtl">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="images/favicon.ico">
-    <title>sample page</title>
-    <% include /src/include/styles.ejs %>
-</head>
-
-<body  class="Site">
-
-    <% include /src/include/header.ejs %>
-
-      <main class="Site-content">
-        sample  page
-      </main>
-  
-    <% include /src/include/footer.ejs %>
-    <% include /src/include/scripts.ejs %>
-</body>
-</html>
+<% include /src/include/header.ejs %>
+<main class="Site-content">
+  <div class="container">
+    <div class="row">
+      <div class="d-flex mt-4">
+        <a href="#" class="text-dark me-2 fs-7">خانه</a>
+        <span class="me-2">></span>
+        <a href="#" class="text-dark me-2 fs-7">محصولات لورم</a>
+        <span class="me-2">></span>
+        <a href="#" class="text-dark me-2 fs-7">هندزفری بلوتوثی بیسوس</a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row mt-4">
+      <div class="col-lg-6 col-12">
+        <div>
+          <h5 class="fw-bold d-lg-none">هندزفری بلوتوث بیسوس</h5>
+          <h6 class="d-lg-none">Baseus Encok W04 Wireless Earphones</h6>
+          <div>
+            <img src="./images/277076_600x.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="mt-2">
+            <div class="owl-carousel owl-theme owl-page more-imgs">
+              <div class="item border rounded-3"><a href="#"><img src="./images/handsfree-more/1.jpg" alt=""></a></div>
+              <div class="item border rounded-3"><a href="#"><img src="./images/handsfree-more/2.jpg" alt=""></a></div>
+              <div class="item border rounded-3"><a href="#"><img src="./images/handsfree-more/3.jpg" alt=""></a></div>
+              <div class="item border rounded-3"><a href="#"><img src="./images/handsfree-more/4.jpg" alt=""></a></div>
+              <div class="item border rounded-3"><a href="#"><img src="./images/handsfree-more/5.jpg" alt=""></a></div>
+              <div class="item border rounded-3"><a href="#"><img src="./images/handsfree-more/6.jpg" alt=""></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-12">
+        <div>
+          <h4 class="fw-bold d-none d-lg-block">هندزفری بلوتوث بیسوس</h5>
+          <h5 class="d-none d-lg-block">Baseus Encok W04 Wireless Earphones</h6>
+          <ul class="list-unstyled mt-4">
+            <li class="fw-bold mb-2">ویژگی های محصول</li>
+            <li>بلوتوث نسخه 5.0 با برد 10متر</li>
+            <li>پخش موسیقی 5 ساعت با ولوم 70%</li>
+            <li>ظرفیت باتری کیس شارژ ۴۰۰ میلی آمپر ساعت </li>
+            <li>ظرفیت باتری هندزفری ۳۷ میلی آمپر ساعت </li>
+            <li>رابط شارژ تایپ سی</li>
+          </ul>
+          <section class="border bg-primary mt-4 py-2 px-3 rounded-3"> 
+            <div class="mb-2 d-flex justify-content-between">
+              <div class="color-selection d-flex align-items-center">
+                <span class="me-3">رنگ:</span>
+                <div class="circle-white rounded-circle me-2 active-circle"></div>
+                <div class="circle-black rounded-circle me-2"></div>
+              </div>
+              <div class="num-selection d-flex align-items-center">
+                <span class="me-3">تعداد:</span>
+                <div x-data="{ count: 1 }">
+                  <button x-on:click="count++" class="fs-5 btn border bg-white">+</button>
+                  <span x-text="count" class="mx-2"></span>
+                  <button x-on:click="count--" class="fs-5 btn border bg-white">-</button>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+              <a href="#" class="text-dark"><img src="https://img.icons8.com/windows/28/000000/like--v1.png" class="me-2"/><span>اضافه به علاقه مندی</span></a>
+              <a href="#" class="text-dark"><img src="https://img.icons8.com/fluency-systems-regular/28/000000/share.png" class="me-2"/><span>اشتراک گذاری</span></a>
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+              <div>
+                <button class="btn shadow-sm p-2 px-3 bg-white"><img src="https://img.icons8.com/ios-glyphs/24/000000/shopping-cart--v1.png" class="me-2"/>افزودن به سبد خرید</button>
+              </div>
+              <div class="d-flex">
+                <span class="d-block text-decoration-line-through me-3">728,000</span>
+                <span class="fw-bold">685,000 تومان</span>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <!-- tabs -->
+    </div>
+  </div>
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center mt-5 mx-2">
+      <h5 class="fw-bold text-dark">محصولات مشابه</h5>
+      <div class="similar-products-nav d-flex">
+        <div class="right-arrow bg-secondary rounded-circle position-relative me-2">
+          <img src="https://img.icons8.com/material-rounded/24/ffffff/chevron-right.png" class="d-block position-absolute top-50 start-50 translate-middle"/>
+        </div>
+        <div class="left-arrow bg-secondary rounded-circle position-relative">
+          <img src="https://img.icons8.com/material-rounded/24/ffffff/chevron-left.png" class="d-block position-absolute top-50 start-50 translate-middle"/>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row panel similar-products position-relative">
+      <div class="owl-carousel owl-theme owl-similar-products">
+        <% include /src/include/product-box.ejs %>
+        <% include /src/include/product-box.ejs %>
+        <% include /src/include/product-box.ejs %>
+        <% include /src/include/product-box.ejs %>
+        <% include /src/include/product-box.ejs %>
+        <% include /src/include/product-box.ejs %>
+        <% include /src/include/product-box.ejs %>
+      </div>
+    </div>
+  </div>
+</main>
+<% include /src/include/footer.ejs %>

@@ -1,0 +1,19 @@
+main{
+    .color-selection > div{
+        width: 26px;
+        height: 26px;
+        box-sizing: content-box;
+    }
+    .circle-white{
+        background-color: white;
+    }
+    .circle-black{
+        background-color: black;
+    }
+    .active-circle{
+        border: 4px solid $click;
+    }
+    section{
+        max-width: 450px;
+    }
+}

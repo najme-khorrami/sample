@@ -11,8 +11,8 @@ $item-height: 330px;
             height: 15px;
             margin: 5px;
             border-radius: 50%;
-            border-color: lighten($color: $dark, $amount: 40%);
-            background-color: lighten($color: $dark, $amount: 40%);
+            border-color: transparent;
+            background-color: rgba(lighten($color: $dark, $amount: 40%), $alpha: .5);
         }
     }
 }
@@ -21,6 +21,10 @@ $item-height: 330px;
         .item{
             min-height: $item-height;
             align-items: center;
+            .img-item{
+                max-width: 250px;
+                max-height: 400px;
+            }
         }
     }
 }

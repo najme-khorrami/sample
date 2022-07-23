@@ -1,6 +1,7 @@
 <!-- <script src="js/vendor.js"></script> -->
 <script src="../vendor/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
 <script src="../vendor/OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.min.js"></script>
+<script src="//unpkg.com/alpinejs" defer></script>
 <script>
     $(document).ready(function () {
     var slider = $('.owl-carousel-slider');
@@ -33,10 +34,16 @@
             0: {
                 items: 1
             },
+            576: {
+                items: 2
+            },
             800: {
                 items: 3
             },
-            1100: {
+            992: {
+                items: 4
+            },
+            1200: {
                 items: 5
             }
         }
@@ -64,10 +71,16 @@
             0: {
                 items: 1
             },
+            576: {
+                items: 2
+            },
             800: {
                 items: 3
             },
-            1100: {
+            992: {
+                items: 4
+            },
+            1200: {
                 items: 5
             }
         }
@@ -95,10 +108,16 @@
             0: {
                 items: 2
             },
+            500: {
+                items: 3
+            },
             800: {
+                items: 4
+            },
+            992: {
                 items: 5
             },
-            1100: {
+            1200: {
                 items: 7
             }
         }
@@ -108,6 +127,57 @@
     });
     $('.brands-nav .left-arrow').click(function () {
         brandsPanel.trigger('prev.owl.carousel', [900]);
+    });
+    })
+</script>
+<script>
+    $(document).ready(function () {
+    var pageslider = $('.more-imgs');
+    pageslider.owlCarousel({
+        rtl: true,
+        loop: true,
+        center: false,
+        margin: 10,
+        nav: false,
+        dots: false,
+        items: 4
+        })
+    });
+</script>
+<script>
+    $(document).ready(function () {
+    var similarProducts = $('.owl-similar-products');
+    similarProducts.owlCarousel({
+        rtl: true,
+        loop: true,
+        center: false,
+        margin: 20,
+        lazyLoad: true,
+        nav: false,
+        dots: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            576: {
+                items: 2
+            },
+            800: {
+                items: 3
+            },
+            992: {
+                items: 4
+            },
+            1200: {
+                items: 5
+            }
+        }
+    })
+    $('.similar-products-nav .right-arrow').click(function () {
+        similarProducts.trigger('next.owl.carousel', [900]);
+    });
+    $('.similar-products-nav .left-arrow').click(function () {
+        similarProducts.trigger('prev.owl.carousel', [900]);
     });
     })
 </script>

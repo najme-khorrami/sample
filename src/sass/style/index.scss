@@ -1,31 +1,11 @@
-$item-height: 330px;
-.slider-parent{
-    position: relative;
-    .slider-dots{
-        position: absolute;
-        z-index: 999;
-        bottom: 0;
-        height: 50px;
-        button{
-            width: 15px;
-            height: 15px;
-            margin: 5px;
-            border-radius: 50%;
-            border-color: transparent;
-            background-color: rgba(lighten($color: $dark, $amount: 40%), $alpha: .5);
-        }
-    }
-}
-.panel{
-    .owl-carousel{
-        .item{
-            min-height: $item-height;
-            align-items: center;
-            .img-item{
-                max-width: 250px;
-                max-height: 400px;
-            }
-        }
+.slider-parent .owl-carousel-slider .owl-dots{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    span{
+        width: 16px;
+        height: 16px;
     }
 }
 .right-arrow,
@@ -41,18 +21,10 @@ $item-height: 330px;
     .item{
         &:hover{
             box-shadow:0 .5rem 1rem rgba($black, .15) !important;
-            .price{
-                background-color: $success;
+            .card-footer{
+                background-color: $success !important;
+                border-radius: 50% 50% 0 0;
             }
-        }
-        position: relative;
-        .price{
-            width: 80%;
-            position: absolute;
-            bottom: 0;
-            margin: auto;
-            border-radius: 50% 50% 0 0;
-            padding: 10px;
         }
         .tag{
             top: 0;
@@ -68,4 +40,8 @@ $item-height: 330px;
 }
 .bg-linear{
     background-color:  rgba(26,42,78,.3);
+}
+.bn{
+    width: 100px;
+    height: 100px;
 }

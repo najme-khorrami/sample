@@ -1,9 +1,11 @@
 <!-- <script src="js/vendor.js"></script> -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="../vendor/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
 <script src="../vendor/OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.min.js"></script>
 <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
 <script src="//unpkg.com/alpinejs" defer></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script>
     $(document).ready(function () {
     var slider = $('.owl-carousel-slider');
@@ -182,4 +184,14 @@
         similarProducts.trigger('prev.owl.carousel', [900]);
     });
     })
+</script>
+<script>
+    $(document).ready(function(){
+        $('.center').slick({
+        rtl:true,
+        slidesToShow: 3,
+        dots:false,
+        centerMode: true,
+        });
+    });
 </script>

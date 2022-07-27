@@ -1,24 +1,29 @@
-.slider-parent .owl-carousel-slider .owl-dots{
+.single-slider .slick-dots{
     position: absolute;
     bottom: 0;
-    left: 50%;
-    transform: translate(-50%);
-    span{
-        width: 16px;
-        height: 16px;
+    padding-bottom: 15px;
+    & button::before{
+        font-size: 20px;
     }
 }
-.right-arrow,
-.left-arrow{
+.custom-arrow-right,
+.custom-arrow-left{
     width: 36px;
     height: 36px;
+    border-radius: 50%;
+    background-color: $secondary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
     cursor: pointer;
     &:hover{
         box-shadow: 3px 3px 7px lighten($secondary , 10%);
     }
 }
 .panel{
-    .item{
+    .slick-slide{
+        transition: all 0.3s ease-in-out;
         &:hover{
             box-shadow:0 .5rem 1rem rgba($black, .15) !important;
             .card-footer{
@@ -35,10 +40,95 @@
         }
     }
 }
+.product-brand-slider{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .slick-slide{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 20px;
+    }
+} 
 .section{
     height: 230px;
 }
-.bg-linear{
-    background-color:  rgba(26,42,78,.3);
+.rounded-4{
+    border-radius: 20px;
 }
-// slick
+// center-slick
+.amazing-suggest{
+    max-height: 500px;
+}
+.center-slider .slick-slide{
+    width: 33%;
+    padding: 20px 0 100px 0;
+    div{
+        background-color: $white;
+        border-radius: 10px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: scale(0.8);
+        transition: all 0.4s ease-in-out;
+        &:nth-child(1){
+            position: relative;
+            &::after{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 10px;
+                right: calc(100% - 36px);
+                content: url("https://img.icons8.com/ios/26/000000/share--v1.png");
+                cursor: pointer;
+                visibility: hidden;
+                transition: all .2s ease-in-out;
+            }
+            &:hover::after{
+                visibility: visible;
+            }
+        }
+        &:nth-child(2){
+            width: 100%;
+            margin-top: 15px;
+        }
+        img{
+            border-radius: 10px;
+        }
+    }
+    &:hover div{
+        box-shadow: 4px 4px 25px 5px rgba($color: #333, $alpha: .4);
+    }
+}
+.center-slider .slick-current.slick-active div{
+    transform: scale(1);
+    &:nth-child(2){
+        margin-top: 15px;
+    }
+}
+.center-slider .slick-arrow{
+    position: absolute;
+    @include media-breakpoint-between(md, lg) {
+        top: 66%;
+    }
+    top: 72%;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &::before{
+        color: $black;
+        font-size: 30px;
+    }
+    &.slick-prev{
+        right: 50%;
+        transform: translate(100% , -50%);
+        margin-left: 15px;
+    }
+    &.slick-next{
+        right: 50%;
+        margin-right: 15px;
+    }
+}

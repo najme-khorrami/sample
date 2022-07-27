@@ -7,132 +7,159 @@
 <script src="//unpkg.com/alpinejs" defer></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script>
-    $(document).ready(function () {
-    var slider = $('.owl-carousel-slider');
-    slider.owlCarousel({
+    $(document).ready(function(){
+        $('.single-slider').slick({
         rtl:true,
-        loop:true,
-        items:1,
-        nav:false,
-        dots:true,
-        autoplay:true,
-        autoplayTimeout:4000, 
-    })
-    $('.slider-parent .slider-dots').click(function () {
-        slider.trigger('next.owl.carousel', [900]);
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true,
+        speed: 300,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        });
     });
-    })
 </script> 
 <script>
-    $(document).ready(function () {
-    var productPanel1 = $('.owl-product-panel1');
-    productPanel1.owlCarousel({
-        rtl: true,
-        loop: true,
-        center: false,
-        margin: 10,
-        lazyLoad: true,
-        nav: false,
-        dots: false,
-        responsive: {
-            0: {
-                items: 1
-            },
-            576: {
-                items: 2
-            },
-            800: {
-                items: 3
-            },
-            992: {
-                items: 4
-            },
-            1200: {
-                items: 5
-            }
-        }
-    })
-    $('.panel1-nav .right-arrow').click(function () {
-        productPanel1.trigger('next.owl.carousel', [900]);
+    $(document).ready(function(){
+        $('.product-new-slider').slick({
+        rtl:true,
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        arrows: true,
+        dots:false,
+        speed: 300,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        appendArrows: $('.product-new-arrow'),
+        prevArrow: '<div class="custom-arrow-right"><img src="https://img.icons8.com/material-rounded/24/ffffff/chevron-right.png"/></div>',
+        nextArrow: '<div class="custom-arrow-right"><img src="https://img.icons8.com/material-rounded/24/ffffff/chevron-left.png"/></div>',
+        responsive: [{
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 4,
+            }},{
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 3,
+            }},{
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 2,
+            }},{
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1,
+            }}]
+        });
     });
-    $('.panel1-nav .left-arrow').click(function () {
-        productPanel1.trigger('prev.owl.carousel', [900]);
-    });
-    })
 </script>
 <script>
-    $(document).ready(function () {
-    var productPanel2 = $('.owl-product-panel2');
-    productPanel2.owlCarousel({
-        rtl: true,
-        loop: true,
-        center: false,
-        margin: 10,
-        lazyLoad: true,
-        nav: false,
-        dots: false,
-        responsive: {
-            0: {
-                items: 1
-            },
-            576: {
-                items: 2
-            },
-            800: {
-                items: 3
-            },
-            992: {
-                items: 4
-            },
-            1200: {
-                items: 5
-            }
-        }
-    })
-    $('.panel2-nav .right-arrow').click(function () {
-        productPanel2.trigger('next.owl.carousel', [900]);
+    $(document).ready(function(){
+        $('.product-view-slider').slick({
+        rtl:true,
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        arrows: true,
+        dots:false,
+        speed: 300,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        appendArrows: $('.product-view-arrow'),
+        prevArrow: '<div class="custom-arrow-right"><img src="https://img.icons8.com/material-rounded/24/ffffff/chevron-right.png"/></div>',
+        nextArrow: '<div class="custom-arrow-right"><img src="https://img.icons8.com/material-rounded/24/ffffff/chevron-left.png"/></div>',
+        responsive: [{
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 4,
+            }},{
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 3,
+            }},{
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 2,
+            }},{
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1,
+            }}]
+        });
     });
-    $('.panel2-nav .left-arrow').click(function () {
-        productPanel2.trigger('prev.owl.carousel', [900]);
-    });
-    })
 </script>
 <script>
-    $(document).ready(function () {
-    var brandsPanel = $('.owl-brands-panel');
-    brandsPanel.owlCarousel({
-        rtl: true,
-        loop: true,
-        center: false,
-        margin: 20,
-        lazyLoad: true,
-        nav: false,
-        dots: false,
-        responsive: {
-            0: {
-                items: 2
-            },
-            500: {
-                items: 3
-            },
-            800: {
-                items: 4
-            },
-            992: {
-                items: 5
-            },
-            1200: {
-                items: 7
-            }
-        }
-    })
-    $('.brands-nav .right-arrow').click(function () {
-        brandsPanel.trigger('next.owl.carousel', [900]);
+    $(document).ready(function(){
+        $('.product-sale-slider').slick({
+        rtl:true,
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        arrows: true,
+        dots:false,
+        speed: 300,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        appendArrows: $('.product-sale-arrow'),
+        prevArrow: '<div class="custom-arrow-right"><img src="https://img.icons8.com/material-rounded/24/ffffff/chevron-right.png"/></div>',
+        nextArrow: '<div class="custom-arrow-right"><img src="https://img.icons8.com/material-rounded/24/ffffff/chevron-left.png"/></div>',
+        responsive: [{
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 4,
+            }},{
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 3,
+            }},{
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 2,
+            }},{
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1,
+            }}]
+        });
+    }); 
+</script>
+<script>
+        $(document).ready(function(){
+        $('.product-brand-slider').slick({
+        rtl:true,
+        infinite: true,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        arrows: true,
+        dots:false,
+        speed: 300,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        appendArrows: $('.product-brand-arrow'),
+        prevArrow: '<div class="custom-arrow-right"><img src="https://img.icons8.com/material-rounded/24/ffffff/chevron-right.png"/></div>',
+        nextArrow: '<div class="custom-arrow-right"><img src="https://img.icons8.com/material-rounded/24/ffffff/chevron-left.png"/></div>',
+        responsive: [{
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 5,
+            }},{
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 4,
+            }},{
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 3,
+            }},{
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 2,
+            }}]
+        });
     });
-    $('.brands-nav .left-arrow').click(function () {
-        brandsPanel.trigger('prev.owl.carousel', [900]);
-    });
-    })
 </script>
 <script>
     $(document).ready(function () {
@@ -149,49 +176,60 @@
     });
 </script>
 <script>
-    $(document).ready(function () {
-    var similarProducts = $('.owl-similar-products');
-    similarProducts.owlCarousel({
-        rtl: true,
-        loop: true,
-        center: false,
-        margin: 20,
-        lazyLoad: true,
-        nav: false,
-        dots: false,
-        responsive: {
-            0: {
-                items: 1
-            },
-            576: {
-                items: 2
-            },
-            800: {
-                items: 3
-            },
-            992: {
-                items: 4
-            },
-            1200: {
-                items: 5
-            }
-        }
-    })
-    $('.similar-products-nav .right-arrow').click(function () {
-        similarProducts.trigger('next.owl.carousel', [900]);
+    $(document).ready(function(){
+        $('.product-old-slider').slick({
+        rtl:true,
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        arrows: true,
+        dots:false,
+        speed: 300,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        appendArrows: $('.product-old-arrow'),
+        prevArrow: '<div class="custom-arrow-right"><img src="https://img.icons8.com/material-rounded/24/ffffff/chevron-right.png"/></div>',
+        nextArrow: '<div class="custom-arrow-right"><img src="https://img.icons8.com/material-rounded/24/ffffff/chevron-left.png"/></div>',
+        responsive: [{
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 4,
+            }},{
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 3,
+            }},{
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 2,
+            }},{
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1,
+            }}]
+        });
     });
-    $('.similar-products-nav .left-arrow').click(function () {
-        similarProducts.trigger('prev.owl.carousel', [900]);
-    });
-    })
 </script>
 <script>
     $(document).ready(function(){
-        $('.center').slick({
+        $('.center-slider').slick({
         rtl:true,
+        infinite: true,
         slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
         dots:false,
         centerMode: true,
+        speed: 300,
+        centerPadding: '20px',
+        autoplay: false,
+        autoplaySpeed: 3000,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
         });
     });
 </script>

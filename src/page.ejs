@@ -22,12 +22,12 @@
           </div>
           <div class="mt-2">
             <div class="owl-carousel owl-theme owl-page more-imgs">
-              <div class="item border rounded-3"><a href="#"><img src="./images/handsfree-more/1.jpg" alt=""></a></div>
-              <div class="item border rounded-3"><a href="#"><img src="./images/handsfree-more/2.jpg" alt=""></a></div>
-              <div class="item border rounded-3"><a href="#"><img src="./images/handsfree-more/3.jpg" alt=""></a></div>
-              <div class="item border rounded-3"><a href="#"><img src="./images/handsfree-more/4.jpg" alt=""></a></div>
-              <div class="item border rounded-3"><a href="#"><img src="./images/handsfree-more/5.jpg" alt=""></a></div>
-              <div class="item border rounded-3"><a href="#"><img src="./images/handsfree-more/6.jpg" alt=""></a></div>
+              <div class="border rounded-3"><a href="#"><img src="./images/handsfree-more/1.jpg" class="img-fluid" alt=""></a></div>
+              <div class="border rounded-3"><a href="#"><img src="./images/handsfree-more/2.jpg" class="img-fluid" alt=""></a></div>
+              <div class="border rounded-3"><a href="#"><img src="./images/handsfree-more/3.jpg" class="img-fluid" alt=""></a></div>
+              <div class="border rounded-3"><a href="#"><img src="./images/handsfree-more/4.jpg" class="img-fluid" alt=""></a></div>
+              <div class="border rounded-3"><a href="#"><img src="./images/handsfree-more/5.jpg" class="img-fluid" alt=""></a></div>
+              <div class="border rounded-3"><a href="#"><img src="./images/handsfree-more/6.jpg" class="img-fluid" alt=""></a></div>
             </div>
           </div>
         </div>
@@ -78,9 +78,9 @@
   </div>
   <div class="container">
     <div class="row mt-5">
-      <div class="border rounded-3">
+      <div class="rounded-3">
       <!--nav pills -->
-      <ul class="nav nav-pills p-2 border-bottom" role="tablist">
+      <ul class="nav nav-pills p-2" role="tablist">
         <li class="nav-item">
           <a class="nav-link active" data-bs-toggle="pill" href="#datail">جزئیات محصول</a>
         </li>
@@ -146,19 +146,12 @@
   <div class="container">
     <div class="d-flex justify-content-between align-items-center mt-5 mx-2">
       <h5 class="fw-bold text-dark">محصولات مشابه</h5>
-      <div class="similar-products-nav d-flex">
-        <div class="right-arrow bg-secondary rounded-circle position-relative me-2">
-          <img src="https://img.icons8.com/material-rounded/24/ffffff/chevron-right.png" class="d-block position-absolute top-50 start-50 translate-middle"/>
-        </div>
-        <div class="left-arrow bg-secondary rounded-circle position-relative">
-          <img src="https://img.icons8.com/material-rounded/24/ffffff/chevron-left.png" class="d-block position-absolute top-50 start-50 translate-middle"/>
-        </div>
-      </div>
+      <div class="product-more-arrow d-flex"></div>
     </div>
   </div>
   <div class="container">
-    <div class="row panel similar-products position-relative">
-      <div class="owl-carousel owl-theme owl-similar-products">
+    <div class="row panel product-panel-more">
+      <div class="product-more-slider">
         <% include /src/include/product-box.ejs %>
         <% include /src/include/product-box.ejs %>
         <% include /src/include/product-box.ejs %>

@@ -5,9 +5,9 @@
   <% include /src/include/slider.ejs %>
   
   <div class="container">
-    <div class="d-flex justify-content-between align-items-center mt-4 mx-2 position-relative">
+    <div class="d-flex justify-content-between align-items-center mt-4 mx-2">
       <h5 class="fw-bold text-dark">جدیدترین ها</h5>
-      <div class="custom-arrow product-new-arrow position-absolute end-0 d-flex"></div>
+      <div class="product-new-arrow d-flex"></div>
     </div>
   </div>
   <div class="container">
@@ -82,9 +82,9 @@
     </div>
   </div>
   <div class="container">
-    <div class="d-flex justify-content-between align-items-center mt-4 mx-2 position-relative">
+    <div class="d-flex justify-content-between align-items-center mt-4 mx-2">
       <h5 class="fw-bold text-dark">پربازدیدترین ها</h5>
-      <div class="custom-arrow product-view-arrow position-absolute end-0 d-flex"></div>
+      <div class="product-view-arrow d-flex"></div>
     </div>
   </div>
   <div class="container">
@@ -100,61 +100,60 @@
       </div>
     </div>
   </div>
-  <!-- slick -->
   <div class="container">
     <div class="row">
-      <div class="bg-info mt-5 mb-3 rounded-4 amazing-suggest">
-        <div class="text-center mt-4"><span class="text-white fw-bold fs-5">پیشنهاد های شگفت انگیز</span></div>
+      <div class="mt-4 mb-2 amazing-suggest">
+        <div class="text-center mt-4"><span class="fw-bold fs-5">پیشنهاد های شگفت انگیز</span></div>
         <div class="center-slider position-relative">
           <div>
-            <div class="position-relative">
+            <div class="position-relative border">
               <img src="./images/amaz-1.jpg" class="h-100 img-fluid" alt="">
-              <div class="d-flex flex-column py-2 fw-bold position-absolute top-100">
+              <div class="d-flex flex-column py-2 fw-bold position-absolute top-100 border">
                 <span>پلوپز میگل</span>
                 <span>1,850,000 تومان</span>
               </div>
             </div>
           </div>
           <div>
-            <div class="position-relative">
+            <div class="position-relative border">
               <img src="./images/amaz-2.jpg" class="h-100 img-fluid" alt="">
-              <div class="d-flex flex-column py-2 fw-bold position-absolute top-100">
+              <div class="d-flex flex-column py-2 fw-bold position-absolute top-100 border">
                 <span>لپتاپ 11 اینچی لنوو</span>
                 <span>10,500,000 تومان</span>
               </div>
             </div>
           </div>
           <div>
-            <div class="position-relative">
+            <div class="position-relative border">
               <img src="./images/amaz-3.jpg" class="h-100 img-fluid" alt="">
-              <div class="d-flex flex-column py-2 fw-bold position-absolute top-100">
+              <div class="d-flex flex-column py-2 fw-bold position-absolute top-100 border">
                 <span>چرخ گوشت مولنکس</span>
                 <span>5,979,000 تومان</span>
               </div>
             </div>
           </div>
           <div>
-            <div class="position-relative">
+            <div class="position-relative border">
               <img src="./images/amaz-4.jpg" class="h-100 img-fluid" alt="">
-              <div class="d-flex flex-column py-2 fw-bold position-absolute top-100">
+              <div class="d-flex flex-column py-2 fw-bold position-absolute top-100 border">
                 <span>تاپ زنانه مونسا</span>
                 <span>172,000 تومان</span>
               </div>
             </div>
           </div>
           <div>
-            <div class="position-relative">
+            <div class="position-relative border">
               <img src="./images/amaz-5.jpg" class="h-100 img-fluid" alt="">
-              <div class="d-flex flex-column py-2 fw-bold position-absolute top-100">
+              <div class="d-flex flex-column py-2 fw-bold position-absolute top-100 border">
                 <span>پنکه</span>
                 <span>1,799,000 تومان</span>
               </div>
             </div>
           </div>
           <div>
-            <div class="position-relative">
+            <div class="position-relative border">
               <img src="./images/amaz-6.jpg" class="h-100 img-fluid" alt="">
-              <div class="d-flex flex-column py-2 fw-bold position-absolute top-100">
+              <div class="d-flex flex-column py-2 fw-bold position-absolute top-100 border">
                 <span>گوشی موبایل هوآوی</span>
                 <span>5,499,000 تومان</span>
               </div>
@@ -164,11 +163,10 @@
       </div>
     </div>
   </div>
-  <!--  -->
   <div class="container">
-    <div class="d-flex justify-content-between align-items-center mt-4 mx-2 position-relative">
+    <div class="d-flex justify-content-between align-items-center mt-4 mx-2">
       <h5 class="fw-bold text-dark">پرفروش ترین ها</h5>
-      <div class="custom-arrow product-sale-arrow position-absolute end-0 d-flex"></div>
+      <div class="product-sale-arrow d-flex"></div>
     </div>
   </div>
   <div class="container">
@@ -185,14 +183,14 @@
     </div>
   </div>
   <div class="container">
-    <div class="d-flex justify-content-between align-items-center mt-4 position-relative border">
-      <h5 class="fw-bold text-dark ps-3">برندها</h5>
-      <div class="custom-arrow product-brand-arrow position-absolute end-0 d-flex border"></div>
+    <div class="d-flex justify-content-between align-items-center mt-4 mx-2">
+      <h5 class="fw-bold text-dark">برندها</h5>
+      <div class="product-brand-arrow d-flex"></div>
     </div>
   </div>
   <div class="container">
-    <div class="row product-panel-brand border">
-      <div class="product-brand-slider border">
+    <div class="row product-panel-brand">
+      <div class="product-brand-slider mt-3">
         <div>
           <a href="#"><img src="./images/apple.png" class="img-fluid" alt=""></a>
         </div>
@@ -218,9 +216,9 @@
     </div>
   </div>
   <div class="container">
-    <div class="d-flex justify-content-between align-items-center mt-5 position-relative">
-      <h5 class="fw-bold text-dark ps-3">قدیمی ترین ها</h5>
-      <div class="custom-arrow product-old-arrow position-absolute end-0 d-flex"></div>
+    <div class="d-flex justify-content-between align-items-center mt-5 mx-2">
+      <h5 class="fw-bold text-dark">قدیمی ترین ها</h5>
+      <div class="product-old-arrow d-flex"></div>
     </div>
   </div>
   <div class="container">

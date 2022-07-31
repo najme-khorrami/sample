@@ -1,3 +1,12 @@
+.title-panel::before{
+    width: 60px;
+    height: 0;
+    content: "";
+    border: 2px solid $secondary;
+    position: absolute;
+    top: 100%;
+    right: 0;
+}
 .single-slider .slick-dots{
     position: absolute;
     bottom: 0;
@@ -8,24 +17,18 @@
 }
 .custom-arrow-right,
 .custom-arrow-left{
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    background-color: $secondary;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 0 5px;
     cursor: pointer;
-    &:hover{
-        box-shadow: 3px 3px 7px lighten($secondary , 10%);
+    & img:hover{
+        transform: scale(1.1);
     }
 }
 .panel{
     .slick-slide{
         transition: all 0.3s ease-in-out;
         &:hover{
-            box-shadow:0 .5rem 1rem rgba($black, .15) !important;
+            box-shadow:2px 2px 5px 2px rgba($black, .15);
+            border: 1px solid rgba($black, .15);
             .card-footer{
                 background: linear-gradient(180deg,#ff0056,#c50042) !important;
                 border-radius: 50% 50% 0 0;
@@ -41,6 +44,13 @@
             }
         }
     }
+}
+.product-box{
+    margin-right: .1rem;
+    margin-left: .1rem;
+}
+.product-panel-brand .slick-slide{
+    transition: all 0.3s ease-in-out;
 }
 .product-brand-slider{
     display: flex;
@@ -81,7 +91,7 @@
                 height: 100%;
                 top: 10px;
                 right: calc(100% - 36px);
-                content: url("https://img.icons8.com/ios/26/000000/share--v1.png");
+                content: url("https://img.icons8.com/ios/24/000000/share--v1.png");
                 cursor: pointer;
                 visibility: hidden;
                 transition: all .2s ease-in-out;
@@ -99,7 +109,7 @@
         }
     }
     &:hover div{
-        box-shadow: 3px 3px 15px 3px rgba($color: #333, $alpha: .3);
+        box-shadow: 0px 1px 5px 2px rgba($color: #333, $alpha: .2);
     }
 }
 .center-slider .slick-current.slick-active div{
@@ -119,8 +129,8 @@
     justify-content: center;
     align-items: center;
     &::before{
-        color: $black;
-        font-size: 30px;
+        color: $secondary;
+        font-size: 35px;
     }
     &.slick-prev{
         right: 50%;
